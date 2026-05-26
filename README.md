@@ -3,7 +3,7 @@ you can send SMS code and verify user phone number
 
 # OTP SMS Project
 
-This is a Django Rest Framework (DRF) application that provides functionality for sending and verifying One-Time Passwords (OTPs) via SMS. The project is structured with a main configuration folder (`config`) and an application named `otp`.
+This is a Django Rest Framework (DRF) application that provides functionality for sending and verifying One-Time Passwords (OTPs) via SMS. The project is structured with a main configuration folder (`config`) and an application named `otp_fz` for FARAZSMS service and `otp_kv` for KAVEHNEGAR.
 
 ## Project Structure
 - **`config/`**: Contains the main Django settings and configuration files (e.g., `settings.py`, `urls.py`, etc.).
@@ -19,8 +19,9 @@ This is a Django Rest Framework (DRF) application that provides functionality fo
 - Python 3.x
 - Django
 - Django Rest Framework
-- An SMS gateway service (e.g., Twilio, Nexmo, etc.) - configure API keys in settings.
-- I use farazsms
+- An SMS gateway service - configure API keys in settings.
+- IPPANEL_API_KEY
+- KAVENEGAR_API_KEY 
 
 ## Installation
 
@@ -28,3 +29,4 @@ This is a Django Rest Framework (DRF) application that provides functionality fo
    ```bash
    git clone https://github.com/shilahsa/OTP-SMS-service.git
    cd OTP-SMS-service
+   
