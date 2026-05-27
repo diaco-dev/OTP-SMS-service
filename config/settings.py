@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'import_export',
     "corsheaders",
     'config',
-    'otp',
+    'otp_fz',
+    'otp_kv',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ['rest_framework_simplejwt.authentication.JWTAuthentication'],
@@ -157,3 +157,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #variable
 MOBILE_VERIFICATION_EXPIRE = 2 * 60  # 120 minutes = 2 * 60 seconds
+
+KAVENEGAR_API_KEY=os.getenv('KAVENEGAR_API_KEY')
